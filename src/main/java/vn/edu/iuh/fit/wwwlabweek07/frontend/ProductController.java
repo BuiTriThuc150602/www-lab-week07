@@ -15,13 +15,15 @@ public class ProductController {
   @Autowired
   private ProductServices productServices;
 
-  @GetMapping("/products")
-  public String getAllProducts(Model model,@RequestParam("page") Optional<Integer> page, @RequestParam("size") Optional<Integer> size){
-    int currentPage = page.orElse(1);
-    int pageSize = size.orElse(10);
-    Page<Product> productPage = productServices.findAll(currentPage, pageSize,"product_id","asc");
-    model.addAttribute("products",productPage.getContent());
-    return "/admin/product/listProduct";
-  }
+//  @GetMapping("/products")
+//  public String getAllProducts(Model model,@RequestParam("page") Optional<Integer> page, @RequestParam("size") Optional<Integer> size){
+//    int currentPage = page.orElse(1);
+//    int pageSize = size.orElse(10);
+//    Page<Product> productPage = productServices.findAll(currentPage, pageSize,"product_id","asc");
+//    model.addAttribute("products",productPage.getContent());
+//    return "/admin/product/listProduct";
+//  }
+
+
 
 }

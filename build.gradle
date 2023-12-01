@@ -32,6 +32,10 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'net.datafaker:datafaker:2.0.2'
 
+    // https://mvnrepository.com/artifact/org.springframework.session/spring-session-core
+    implementation 'org.springframework.session:spring-session-core:3.2.0'
+
+
 }
 
 tasks.named('bootBuildImage') {

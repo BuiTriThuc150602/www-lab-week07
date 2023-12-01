@@ -22,11 +22,11 @@ public class Customer {
   private long cust_id;
   @Column(name = "cust_name")
   private String cust_name;
-  @Column(name = "email")
-
+  @Column(name = "email", unique = true)
   private String email;
+  @Column(name = "password")
+  private String password;
   @Column(name = "phone")
-
   private String Phone;
   @Column(name = "address")
 
